@@ -177,7 +177,7 @@
         document.getElementById('podium').innerHTML = top3.map((player, index) => `
           <div class="card" data-id="${player.id}">
             <div class="medal">${['🥇', '🥈', '🥉'][index]}</div>
-            <div class="avatar">${player.name.split(' ').map(w => w[0]).join('').slice(0, 2)}</div>
+            <img class="avatar" src="messi.jpg" alt="messi">
             <div class="name">${player.name}</div>
             <div class="meta">${player.nat} · ${player.club}</div>
             <div class="value">${state.cat.getValue(player)}${state.cat.suffix}</div>
